@@ -1,7 +1,7 @@
 
-// ******************** \\
-// * PCMod 3 - thomasfn * \\
-// ******************** \\
+// ************************************ \\
+// * PCMod 3 - thomasfn & bobbahbrown * \\
+// ************************************ \\
 // cl_screen.lua - CLIENTSIDE - Loads the screen object
 
 local M = PCMod3.CreateModule( "Screen" )

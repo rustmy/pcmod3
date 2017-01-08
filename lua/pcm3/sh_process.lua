@@ -1,7 +1,7 @@
 
-// ******************** \\
-// * PCMod 3 - thomasfn * \\
-// ******************** \\
+// ************************************ \\
+// * PCMod 3 - thomasfn & bobbahbrown * \\
+// ************************************ \\
 // sh_process.lua - SHARED - Loads settings functionality
 
 local obj = PCMod3.CreateBase( "process" )
@@ -18,13 +18,13 @@ function obj:OnRemove()
 end
 
 function obj:Think()
-	
+
 end
 
 if (SERVER) then
 
 	function obj:Manifest()
-		
+
 	end
 
 end
@@ -32,7 +32,7 @@ end
 if (CLIENT) then
 
 	function obj:Update( um )
-		
+
 	end
 
 end

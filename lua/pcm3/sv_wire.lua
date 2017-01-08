@@ -1,7 +1,7 @@
 
-// ******************** \\
-// * PCMod 3 - thomasfn * \\
-// ******************** \\
+// ************************************ \\
+// * PCMod 3 - thomasfn & bobbahbrown * \\
+// ************************************ \\
 // sv_wire.lua - SERVERSIDE - Loads the wire functionality
 
 // Note: This file is not related to wiremod in any way

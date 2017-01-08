@@ -1,7 +1,7 @@
 
-// ******************** \\
-// * PCMod 3 - thomasfn * \\
-// ******************** \\
+// ************************************ \\
+// * PCMod 3 - thomasfn & bobbahbrown * \\
+// ************************************ \\
 // object.lua - SHARED - Loads the object functionality
 
 PCMod3.Factories = {}

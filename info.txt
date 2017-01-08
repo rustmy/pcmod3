@@ -3,9 +3,9 @@
 	"name"		"PCMod 3"
 	"version"	"3.00"
 	"up_date"	""
-	"author_name"	"thomasfn"
-	"author_email"	"thomasfn@fortfn.co.uk"
-	"author_url"	""
-	
+	"author_name"	"thomasfn/bobbahbrown"
+	"author_email"	""
+	"author_url"	"http://www.melonmesa.com"
+
 	"info"		"Adds a pack of computer hardware to Garry's Mod"
 }

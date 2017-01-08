@@ -1,7 +1,7 @@
 
-// ******************** \\
-// * PCMod 3 - thomasfn * \\
-// ******************** \\
+// ************************************ \\
+// * PCMod 3 - thomasfn & bobbahbrown * \\
+// ************************************ \\
 // glua_extend.lua - SHARED - Extends glua functionality
 
 function math.Mid( a, b, d )

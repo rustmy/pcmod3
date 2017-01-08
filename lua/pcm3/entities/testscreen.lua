@@ -1,7 +1,7 @@
 
-// ******************** \\
-// * PCMod 3 - thomasfn * \\
-// ******************** \\
+// ************************************ \\
+// * PCMod 3 - thomasfn & bobbahbrown * \\
+// ************************************ \\
 // testscreen.lua - SHARED - Loads the test screen entity
 
 local ENT = {}
@@ -21,12 +21,12 @@ if (CLIENT) then
 			ErrPCM( "Failed to locate config for test screen!" )
 		end
 	end
-	
+
 	function ENT:Draw()
 		self:DrawModel()
 		if (self.Screen) then self.Screen:Render() end
 	end
-	
+
 	PCMod3.AddEntLanguage( ENT )
 
 end

@@ -1,7 +1,7 @@
 
-// ******************** \\
-// * PCMod 3 - thomasfn * \\
-// ******************** \\
+// ************************************ \\
+// * PCMod 3 - thomasfn & bobbahbrown * \\
+// ************************************ \\
 // sh_settings.lua - SHARED - Loads settings functionality
 
 local M = PCMod3.CreateModule( "Settings" )

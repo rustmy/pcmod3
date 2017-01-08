@@ -1,7 +1,7 @@
 
-// ******************** \\
-// * PCMod 3 - thomasfn * \\
-// ******************** \\
+// ************************************ \\
+// * PCMod 3 - thomasfn & bobbahbrown * \\
+// ************************************ \\
 // cl_font.lua - CLIENTSIDE - Loads fonts system
 
 local M = PCMod3.CreateModule( "Font" )

@@ -1,7 +1,7 @@
 
-// ******************** \\
-// * PCMod 3 - thomasfn * \\
-// ******************** \\
+// ************************************ \\
+// * PCMod 3 - thomasfn & bobbahbrown * \\
+// ************************************ \\
 // cl_screenconfig.lua - CLIENTSIDE - Loads screen configurations
 
 local M = PCMod3.CreateModule( "ScreenConfig" )

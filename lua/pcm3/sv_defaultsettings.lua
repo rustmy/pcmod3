@@ -1,7 +1,7 @@
 
-// ******************** \\
-// * PCMod 3 - thomasfn * \\
-// ******************** \\
+// ************************************ \\
+// * PCMod 3 - thomasfn & bobbahbrown * \\
+// ************************************ \\
 // sv_defaultsettings.lua - SERVERSIDE - Loads the default settings
 
 PCMod3.DefaultSettings = {

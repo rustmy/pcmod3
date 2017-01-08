@@ -1,7 +1,7 @@
 
-// ******************** \\
-// * PCMod 3 - thomasfn * \\
-// ******************** \\
+// ************************************ \\
+// * PCMod 3 - thomasfn & bobbahbrown * \\
+// ************************************ \\
 // util.lua - SHARED - Loads utility functions
 
 function MsgPCM( str )
@@ -164,7 +164,7 @@ function PCMod3.CreateSTool( name )
 					local pf = "Tool_" .. name .. "_"
 					language.Add( pf .. "name", self.Name )
 					language.Add( pf .. "desc", self.Desc )
-					
+
 					if (self.Inst) then
 						for k, v in pairs( self.Inst ) do
 							local s = ""
@@ -174,7 +174,7 @@ function PCMod3.CreateSTool( name )
 							language.Add( pf .. tostring( k-1 ), s )
 						end
 					end
-				
+
 				end
 			end
 			obj.Tool[ name ] = o
@@ -202,22 +202,22 @@ function PCMod3.ImplementSToolGhost( TOOL )
 
 		local tr 	= utilx.GetPlayerTrace( ply, ply:GetCursorAimVector() )
 		local trace 	= util.TraceLine( tr )
-		
+
 		if (!trace.Hit || trace.Entity:IsPlayer() || trace.Entity:GetClass() == self.EntClass ) then
 			ent:SetNoDraw( true )
 			return
 		end
-		
+
 		local Ang = trace.HitNormal:Angle()
 		Ang.pitch = Ang.pitch + 90
-		ent:SetAngles( Ang )	
+		ent:SetAngles( Ang )
 
 		local min = ent:OBBMins()
 		ent:SetPos( trace.HitPos - trace.HitNormal * min.z )
-		
+
 		ent:SetNoDraw( false )
 
-	end	
+	end
 end
 
 PCMod3.SpawnableEnts = {}

@@ -1,7 +1,7 @@
 
-// ******************** \\
-// * PCMod 3 - thomasfn * \\
-// ******************** \\
+// ************************************ \\
+// * PCMod 3 - thomasfn & bobbahbrown * \\
+// ************************************ \\
 // cl_basepanel.lua - CLIENTSIDE - Loads the base panel object
 
 local obj = PCMod3.CreateBase( "basepanel" )
@@ -71,7 +71,7 @@ function obj:BringToFront()
 	if not (p && p:IsValid()) then return end
 	local c = p.m_tChildren
 	if (!c) then return end
-	
+
 	// Find our ID
 	local j, f
 	for i=1, #c do
@@ -82,7 +82,7 @@ function obj:BringToFront()
 		end
 	end
 	if (!f) then return end
-	
+
 	// Remove us from the table and insert us at the front
 	table.remove( c, j )
 	table.insert( c, self, 1 )

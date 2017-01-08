@@ -1,7 +1,7 @@
 
-// ******************** \\
-// * PCMod 3 - thomasfn * \\
-// ******************** \\
+// ************************************ \\
+// * PCMod 3 - thomasfn & bobbahbrown * \\
+// ************************************ \\
 // sv_player.lua - SERVERSIDE - Loads the serverside player functionality
 
 local meta = PCMod3.GetPlayerMetaTable()
