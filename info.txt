@@ -1,0 +1,11 @@
+"AddonInfo"
+{
+	"name"		"PCMod 3"
+	"version"	"3.00"
+	"up_date"	""
+	"author_name"	"thomasfn"
+	"author_email"	"thomasfn@fortfn.co.uk"
+	"author_url"	""
+	
+	"info"		"Adds a pack of computer hardware to Garry's Mod"
+}
