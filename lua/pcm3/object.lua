@@ -59,7 +59,7 @@ function PCMod3.CreateBase( classname, basename )
 			ErrPCM( "Failed to locate base '" .. basename .. "' for factory '" .. classname .. "'" )
 			return
 		end
-		setmetatable( obj, base[1]
+		setmetatable( obj, base[1] )
 	end
 	obj.Classname = classname
 	obj.BaseClass = base

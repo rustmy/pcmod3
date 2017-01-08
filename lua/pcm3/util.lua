@@ -34,7 +34,7 @@ end
 function PCMod3.AddInDirectory( dir, prefix )
 	if (CLIENT) then return ErrPCM( "Tried to call AddInDirectory on client!" ) end
 	local filter = dir .. "/" .. (prefix or "") .. "*"
-	local files = file.FindInLua( filter )
+	local files = file.Find( filter, "LUA" )
 	for _, name in pairs( files ) do
 		if (name != "..") && (name != ".") then
 			AddCSLuaFile( dir .. "/" .. name )
