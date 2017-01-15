@@ -50,7 +50,7 @@ function TOOL:LeftClick( tr )
 	end
 	
 	local ent = ents.Create( "pcm3_" .. class )
-	if (!ValidEntity( ent )) then
+	if (!IsValid( ent )) then
 		ErrPCM( "Failed to create entity by class 'pcm_" .. class .. "'" )
 		return false
 	end
@@ -66,7 +66,7 @@ function TOOL:LeftClick( tr )
 	ply:pcmAddEnt( class )
 	
 	local function Remove()
-		if (!ValidEntity( ply )) then return end
+		if (!IsValid( ply )) then return end
 		ply:pcmRemoveEnt( class )
 	end
 	ent:CallOnRemove( "pcmHandleLimit", Remove )

@@ -27,8 +27,6 @@ if (CLIENT) then
 		if (self.Screen) then self.Screen:Render() end
 	end
 
-	PCMod3.AddEntLanguage( ENT )
-
 end
 
 PCMod3.RegisterAnimEnt( "pcm3_testscreen", ENT, "pcm3_base" )

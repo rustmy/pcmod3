@@ -19,7 +19,7 @@ function PCMod3.IncludeInDirectory( dir, prefix, delayed )
 		return
 	end
 	local filter = dir .. "/" .. (prefix or "") .. "*"
-	local files = file.FindInLua( filter )
+	local files = file.Find( filter, "LUA" )
 	for _, name in pairs( files ) do
 		if (name != "..") && (name != ".") then
 			//print( "INCLUDING FILE: " .. dir .. "/" .. name )
@@ -127,6 +127,9 @@ function PCMod3.RegisterAnimEnt( name, tbl, basename )
 	o.Type = "anim"
 	scripted_ents.Register( o, name, true )
 	MsgPCM( "Registered anim entity '" .. name .. "'" )
+	if (CLIENT) then
+		PCMod3.AddEntLanguage( o )
+	end
 end
 
 PCMod3.Stools = {}
@@ -200,7 +203,7 @@ function PCMod3.ImplementSToolGhost( TOOL )
 
 		if ( !ent || !ent:IsValid() ) then return end
 
-		local tr 	= utilx.GetPlayerTrace( ply, ply:GetCursorAimVector() )
+		local tr 	= util.GetPlayerTrace( ply, ply:GetAimVector() )
 		local trace 	= util.TraceLine( tr )
 
 		if (!trace.Hit || trace.Entity:IsPlayer() || trace.Entity:GetClass() == self.EntClass ) then
@@ -227,7 +230,7 @@ function PCMod3.RegisterSpawnableEnt( ent )
 end
 
 function PCMod3.GetPlayerMetaTable()
-	return _R.Player
+	return FindMetaTable( "Player" )
 end
 
 weapons.OldRegister = weapons.OldRegister or weapons.Register
