@@ -114,7 +114,7 @@ if (CLIENT) then
 	function PCMod3.AddEntLanguage( ent )
 		local class = ent.Classname
 		local name = ent.PrintName
-		language.Add( "#Undone_" .. class, "Undone " .. name .. "!" )
+		language.Add( "#Undone." .. class, "Undone " .. name .. "!" )
 	end
 
 end
@@ -164,7 +164,7 @@ function PCMod3.CreateSTool( name )
 			function o:Finialize()
 				self:CreateConVars()
 				if (CLIENT) then
-					local pf = "Tool_" .. name .. "_"
+					local pf = "Tool." .. name .. "."
 					language.Add( pf .. "name", self.Name )
 					language.Add( pf .. "desc", self.Desc )
 
