@@ -21,14 +21,6 @@ function obj:New()
 	function self.m_pPanel:Paint( x, y, w, h )
 		surface.SetDrawColor( 0, 0, 0, 255 )
 		surface.DrawRect( x, y, w, h )
-		
-		surface.SetDrawColor( 255, 0, 0, 255 )
-		surface.DrawRect( 0, 0, 20, 20 )
-		
-		surface.SetTextPos( 0, 0 )
-		surface.SetFont( "Default" )
-		surface.SetTextColor( 255, 255, 255, 255 )
-		surface.DrawText( "Hello Mr Bobbah" )
 	end
 end
 
